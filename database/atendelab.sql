@@ -79,29 +79,29 @@ INSERT INTO `usuarios` (`id`, `nome`, `email`, `senha`, `perfil`, `status`) VALU
 -- Tipos de atendimento
 --
 INSERT INTO `tipos_atendimentos` (`id`, `nome`, `descricao`, `status`) VALUES
-(1, 'Atendimento acadêmico', 'Orientações gerais sobre a vida acadêmica.', 'ativo'),
-(2, 'Suporte técnico', 'Apoio com sistemas, portal do aluno e laboratórios.', 'ativo'),
-(3, 'Orientação de TCC', 'Acompanhamento do trabalho de conclusão de curso.', 'ativo'),
-(4, 'Financeiro e bolsas', 'Negociação de mensalidades, bolsas e financiamento.', 'ativo'),
-(5, 'Estágio e carreira', 'Encaminhamento para vagas de estágio e orientação profissional.', 'ativo'),
-(6, 'Apoio psicopedagógico', 'Suporte emocional e pedagógico ao estudante.', 'inativo');
+(1, 'Apoio acadêmico geral', 'Suporte e orientação sobre disciplinas, rotina e vida universitária.', 'ativo'),
+(2, 'Suporte de sistemas', 'Ajuda com portal do aluno, sistemas internos e acesso a laboratórios.', 'ativo'),
+(3, 'Acompanhamento de TCC', 'Orientação e apoio no desenvolvimento do trabalho de conclusão de curso.', 'ativo'),
+(4, 'Setor financeiro e bolsas', 'Informações sobre pagamentos, bolsas, descontos e financiamentos.', 'ativo'),
+(5, 'Carreira e estágio', 'Encaminhamento e orientação para estágios, empregos e mercado de trabalho.', 'ativo'),
+(6, 'Apoio psicológico e pedagógico', 'Atendimento voltado ao bem-estar emocional e suporte educacional.', 'inativo');
 
 --
 -- Pessoas atendidas
 --
 INSERT INTO `pessoas` (`id`, `nome`, `documento`, `telefone`, `email`, `curso`, `periodo`, `observacoes`, `status`) VALUES
-(1, 'Ana Beatriz Lima', '101.202.303-01', '(47) 99876-1010', 'ana.lima@univille.br', 'Engenharia de Software', '5', 'Aluna veterana, participa do PET.', 'ativo'),
-(2, 'Carlos Eduardo Rocha', '102.203.304-02', '(47) 99876-2020', 'carlos.rocha@univille.br', 'Engenharia de Software', '5', NULL, 'ativo'),
-(3, 'Mariana Oliveira', '103.204.305-03', '(47) 99876-3030', 'mariana.oliveira@univille.br', 'Direito', '3', 'Solicitou revisão de matrícula.', 'ativo'),
-(4, 'Pedro Henrique Alves', '104.205.306-04', '(47) 99876-4040', 'pedro.alves@univille.br', 'Administração', '7', NULL, 'ativo'),
-(5, 'Juliana Santos', '105.206.307-05', '(47) 99876-5050', 'juliana.santos@univille.br', 'Psicologia', '4', 'Acompanhamento psicopedagógico.', 'ativo'),
-(6, 'Rafael Costa', '106.207.308-06', '(47) 99876-6060', 'rafael.costa@univille.br', 'Engenharia Civil', '8', NULL, 'ativo'),
-(7, 'Fernanda Souza', '107.208.309-07', '(47) 99876-7070', 'fernanda.souza@univille.br', 'Medicina', '2', 'Bolsista PROUNI.', 'ativo'),
-(8, 'Lucas Pereira', '108.209.310-08', '(47) 99876-8080', 'lucas.pereira@univille.br', 'Ciência da Computação', '6', NULL, 'ativo'),
-(9, 'Beatriz Carvalho', '109.210.311-09', '(47) 99876-9090', 'beatriz.carvalho@univille.br', 'Arquitetura e Urbanismo', '5', NULL, 'ativo'),
-(10, 'Gustavo Martins', '110.211.312-10', '(47) 99877-1112', 'gustavo.martins@univille.br', 'Engenharia de Software', '5', 'Representante de turma.', 'ativo'),
-(11, 'Larissa Fernandes', '111.212.313-11', '(47) 99877-2223', 'larissa.fernandes@univille.br', 'Enfermagem', '1', 'Transferida de outra instituição.', 'inativo'),
-(12, 'Diego Ramos', '112.213.314-12', '(47) 99877-3334', 'diego.ramos@univille.br', 'Educação Física', '9', 'Concluindo o curso.', 'inativo');
+(1, 'Camila Ribeiro', '201.302.403-11', '(47) 99111-1010', 'camila.ribeiro@univille.br', 'Engenharia de Software', '5', 'Aluna destaque em projetos.', 'ativo'),
+(2, 'Bruno Almeida', '202.303.404-22', '(47) 99222-2020', 'bruno.almeida@univille.br', 'Engenharia de Software', '5', NULL, 'ativo'),
+(3, 'Juliana Martins', '203.304.405-33', '(47) 99333-3030', 'juliana.martins@univille.br', 'Direito', '3', 'Solicitou revisão de matrícula.', 'ativo'),
+(4, 'Felipe Gonçalves', '204.305.406-44', '(47) 99444-4040', 'felipe.goncalves@univille.br', 'Administração', '7', NULL, 'ativo'),
+(5, 'Larissa Souza', '205.306.407-55', '(47) 99555-5050', 'larissa.souza@univille.br', 'Psicologia', '4', 'Acompanhamento pedagógico.', 'ativo'),
+(6, 'Mateus Costa', '206.307.408-66', '(47) 99666-6060', 'mateus.costa@univille.br', 'Engenharia Civil', '8', NULL, 'ativo'),
+(7, 'Sabrina Lima', '207.308.409-77', '(47) 99777-7070', 'sabrina.lima@univille.br', 'Medicina', '2', 'Bolsista integral.', 'ativo'),
+(8, 'Daniel Pereira', '208.309.410-88', '(47) 99888-8080', 'daniel.pereira@univille.br', 'Ciência da Computação', '6', NULL, 'ativo'),
+(9, 'Isabela Rocha', '209.310.411-99', '(47) 99999-9090', 'isabela.rocha@univille.br', 'Arquitetura e Urbanismo', '5', NULL, 'ativo'),
+(10, 'Gustavo Henrique', '210.311-512-10', '(47) 99771-1112', 'gustavo.henrique@univille.br', 'Engenharia de Software', '5', 'Representante acadêmico.', 'ativo'),
+(11, 'Amanda Fernandes', '211.312.613-11', '(47) 99772-2223', 'amanda.fernandes@univille.br', 'Enfermagem', '1', 'Transferência recente.', 'inativo'),
+(12, 'Thiago Ramos', '212.313.714-12', '(47) 99773-3334', 'thiago.ramos@univille.br', 'Educação Física', '9', 'Finalizando estágio.', 'inativo');
 
 --
 -- Atendimentos
